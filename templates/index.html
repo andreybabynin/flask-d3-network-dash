@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pulse Network Graph</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js">
+    </script>
+    <link type="text/css" rel="stylesheet" href="static/assets/force.css"/>
+  </head>
+  <body>
+    
+      <h5 align='center' style="font-size: 1.3em">
+        This is a network graph for stocks mentioned in posts about <mark style = "color: blue">{{data}}</mark>.
+        The graph returns the network of 60 latest posts in Tinkoff.Pulse
+      </h5>
+      <h5 align='center' style="font-size: 1em">
+        The dashboard is under DEVELOPMENT.
+      </h5>
+    <div  align = 'center'>
+      <form action="" method = 'POST'>
+
+        <label for="ticker">Ticker</label>
+        <input type="text" name="ticker">
+
+        <input type="submit">
+    
+      </form>
+      
+      <svg width="600" height="400"></svg>
+      <script type="text/javascript" src="static/js/index.js"></script>
+  </div>
+  </body>
+</html>
