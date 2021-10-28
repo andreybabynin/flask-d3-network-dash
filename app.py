@@ -37,7 +37,7 @@ def static_proxy():
     return jsonify(network)
 
 def main():  
-    app.run(port = PORT, debug=True)
+    app.run(host="0.0.0.0", port = PORT, debug=True)
     
 if __name__ == '__main__':
     main()
